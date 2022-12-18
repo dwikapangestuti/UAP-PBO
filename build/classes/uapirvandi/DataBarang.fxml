@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uapirvandi.DataBarangController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="225.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT BARANG">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblNamaProduk" layoutX="95.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama :" />
+            <Text fx:id="lblHargaProduk" layoutX="95.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harga :" />
+            <Text fx:id="lblJumlahProduk" layoutX="95.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumlah :" />
+            <Text fx:id="lblDiskonProduk" layoutX="95.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diskon :" />
+            <Text fx:id="lbl_IdProduk" layoutX="95.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barcode :" />
+            <Text fx:id="lblExpiredProduk" layoutX="94.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expired :" />
+            <TextField fx:id="lbl_idProduk" layoutX="181.0" layoutY="129.0" prefHeight="26.0" prefWidth="225.0" />
+            <TextField fx:id="lbl_inputNama" layoutX="181.0" layoutY="165.0" prefHeight="26.0" prefWidth="226.0" />
+            <TextField fx:id="lbl_inputHarga" layoutX="181.0" layoutY="196.0" prefHeight="26.0" prefWidth="226.0" />
+            <TextField fx:id="lbl_inputJumlah" layoutX="181.0" layoutY="230.0" prefHeight="26.0" prefWidth="226.0" />
+            <TextField fx:id="lbl_inputDiskon" layoutX="182.0" layoutY="261.0" prefHeight="26.0" prefWidth="226.0" />
+            <TextField fx:id="lbl_inputexp" layoutX="181.0" layoutY="295.0" prefHeight="26.0" prefWidth="226.0" />
+            <Button fx:id="btn_InputAdd" layoutX="323.0" layoutY="347.0" mnemonicParsing="false" onAction="#addData" prefHeight="26.0" prefWidth="66.0" text="Add" />
+            <Button fx:id="btn_InputBack" layoutX="489.0" layoutY="347.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="26.0" prefWidth="66.0" text="Back" />
+            <Button fx:id="btn_InputCancel" layoutX="407.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancel_InputData" prefHeight="26.0" prefWidth="66.0" text="Cancel" />
+            <ComboBox fx:id="dropdownKategori" layoutX="181.0" layoutY="87.0" onAction="#pilihKategori" prefWidth="150.0" promptText="Barang" />
+            <Text fx:id="lblKategori" layoutX="94.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategori" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
